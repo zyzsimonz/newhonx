@@ -1,18 +1,28 @@
 @media screen and (max-width: 768px) {
   .navigation {
-    display:flexbox;
-    flex-direction:column;
+    display: flexbox;
+    flex-direction: column;
   }
 }
 
 
 @media screen and (min-width: 768px) {
   .navigation {
-    background-color: #fefffd05;
-    border: none;
-    right: 0;
-    position: absolute;
-    margin-right: 10%;
-    margin-top: 10px;
+    margin-right: 15%;
+    margin-top: 50px;
+  }
+
+  .logo {
+    margin-left: 8%;
+    margin-top: 20px;
+  }
+
+  div.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: antiquewhite;
   }
 }

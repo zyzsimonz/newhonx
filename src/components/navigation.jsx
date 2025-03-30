@@ -4,7 +4,8 @@ import { Menubar } from 'primereact/menubar'
 import { MegaMenu } from 'primereact/megamenu';
 import { Menu } from 'primereact/menu'
 import { Button } from 'primereact/button';
-import { Toast } from 'primereact/toast';
+import { Image } from 'primereact/image';
+import { Panel } from 'primereact/panel';
 
 export default function Navigation() {
 
@@ -101,36 +102,19 @@ export default function Navigation() {
     const menuRight = useRef(null);
 
     return (
-        <div className='card' style={{ with: '100%' }}>
-            {/* <ContextMenu model={ items } /> */}
-            {/* <Menubar model={items} /> */}
+        <div className="container">
 
-            {/* <ul className='menu'>
-                <li><a href='#'>主页</a></li>
-                <li className='dropdown'>
-                    <a href='#'>产品中心</a>
-                    <ul className='dropdown-content'>
-                        <li><a href='#'>不锈钢系列</a></li>
-                        <li><a href='#'>和面机系列</a></li>
-                        <li><a href='#'>蒸烤机系列</a></li>
-                        <li><a href='#'>煮面炉系列</a></li>
-                        <li><a href='#'>自助餐系列</a></li>
-                    </ul>
-                </li>
-                <li><a href='#'>制冷设备</a></li>
-                <li><a href='#'>工程案例</a></li>
-
-                <li><a href='#'>关于</a></li>
-            </ul> */}
+            <div className="logo">
+                <Image src="newhonx-logo.png" width='230px' />
+            </div>
             <div className="navigation">
                 <Button label='首页' text />
                 <Menu model={items} popup ref={menuRight} id="popup_menu_right" />
-                <Button label="产品中心" text  onClick={(event) => menuRight.current.toggle(event)} aria-controls="popup_menu_right" aria-haspopup />
-                <Button label="制冷设备"  text/>
-                <Button label='工程案例' text/>
-                <Button label='关于' text/>
+                <Button label="产品中心" text onClick={(event) => menuRight.current.toggle(event)} aria-controls="popup_menu_right" aria-haspopup />
+                <Button label="制冷设备" text />
+                <Button label='工程案例' text />
+                <Button label='联系我们' text />
             </div>
-
 
         </div>
 

@@ -1,15 +1,21 @@
 import { React } from 'react'
 import Navigation from '../components/navigation';
-import Title from '../components/title';
 import Gallary from '../components/gallary';
+import GateFace from '../components/gateface';
+import '../style/homePage.css'
 
+
+
+
+  
 
 export default function HomePage() {
     return (
-        <div>
-            <Title />
+        <div className="homePage">
             <Navigation />
+            <GateFace />
             <Gallary />
+           
         </div>
     );
 };
