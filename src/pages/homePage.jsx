@@ -13,9 +13,8 @@ export default function HomePage() {
     return (
         <div className="homePage">
             <Navigation />
-            <GateFace />
             <Gallary />
-           
+            <GateFace />
         </div>
     );
 };

@@ -10,13 +10,12 @@
     align-content: space-around;
     
     justify-content: center;
-    align-items:start; 
+    align-items:flex-start; 
 
   }
 
   div.profile{
-    width: 800px;
-    padding-left: 80px;
+    width: 49%;
+    padding-left: 2%;
   }
-
 }
