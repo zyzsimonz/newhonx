@@ -19,7 +19,7 @@ export default function Gallary() {
 
     return (
         <div className="galleria-container">
-            <Galleria value={images} showThumbnails={false} showIndicators autoPlay item={itemTemplate} />
+            <Galleria value={images} showThumbnails={false} showItemNavigators showIndicators autoPlay item={itemTemplate} />
         </div>
     )
 }

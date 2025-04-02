@@ -6,6 +6,7 @@ import { Menu } from 'primereact/menu'
 import { Button } from 'primereact/button';
 import { Image } from 'primereact/image';
 import { Panel } from 'primereact/panel';
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -69,6 +70,9 @@ export default function Navigation() {
             label: '主页',
         },
         {
+            label: '制冷设备'
+        },
+        {
             label: '产品中心',
             items: [
                 [
@@ -87,9 +91,7 @@ export default function Navigation() {
                 ]
             ]
         },
-        {
-            label: '制冷设备'
-        },
+        
         {
             label: '工程案例'
         },
@@ -102,6 +104,7 @@ export default function Navigation() {
 
 
     const menuRight = useRef(null);
+    const navigate = useNavigate();
 
     return (
         <div className="container">
@@ -111,11 +114,12 @@ export default function Navigation() {
             </div>
             <div className="navigation">
                 <Button label='首页' text />
+                <Button label="制冷设备" text />
                 <Menu model={items} popup ref={menuRight} id="popup_menu_right" />
                 <Button label="产品中心" text onClick={(event) => menuRight.current.toggle(event)} aria-controls="popup_menu_right" aria-haspopup />
-                <Button label="制冷设备" text />
                 <Button label='工程案例' text />
                 <Button label='联系我们' text />
+                <Button label='关于我们' text  onClick={() => navigate('/about')}/>
             </div>
 
         </div>
