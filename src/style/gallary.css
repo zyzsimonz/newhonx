@@ -5,7 +5,7 @@
 
 
     div.galleria-container img {
-        @apply min-w-full max-h-[700px] p-1
+        @apply w-full min-w-full h-full max-h-[700px] p-1
     }
 
 
