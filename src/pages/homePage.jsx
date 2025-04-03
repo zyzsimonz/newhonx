@@ -4,6 +4,7 @@ import Gallary from '../components/gallary';
 import GateFace from '../components/gateface';
 import '../style/homePage.css'
 import Product from '../components/product';
+import ProductsPage from './productsPage';
 
 
 
@@ -15,7 +16,7 @@ export default function HomePage() {
         <div className="homePage">
             <Navigation />
             <Gallary />
-            <Product />
+            <ProductsPage />
         </div>
     );
 };
